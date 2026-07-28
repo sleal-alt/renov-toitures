@@ -4,6 +4,7 @@ import CounterSection from "@/components/CounterSection";
 import ServiceCard from "@/components/ServiceCard";
 import FournisseursCarousel from "@/components/FournisseursCarousel";
 import AvisClients from "@/components/AvisClients";
+import AtoutCard from "@/components/AtoutCard";
 
 const SERVICES = [
   {
@@ -118,32 +119,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 3 ATOUTS (white cards overlapping hero bottom) ── */}
+      {/* ── 3 ATOUTS flip cards ── */}
       <section style={{ background: "#f5f5f5", padding: "0" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 0 }}>
-          {[
-            {
-              icon: <svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#F5A524"/><path d="M18 28l-2-2 2-2M32 28l2-2-2-2M22 32l6-14" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>,
-              title: "20 Ans D'Expérience",
-              desc: "Ayant connu les évolutions des techniques de rénovation, nous mettons nos nombreuses années d'expérience à votre service.",
-            },
-            {
-              icon: <svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#F5A524"/><path d="M17 33l3-3 3 3 3-3 3 3 3-3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M15 25h20M15 20h20M15 30h12" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>,
-              title: "Devis Gratuits",
-              desc: "N'hésitez plus, demandez une estimation et un devis gratuitement afin de chiffrer votre projet avec précision.",
-            },
-            {
-              icon: <svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#F5A524"/><path d="M10 28L25 14L40 28" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/><rect x="19" y="28" width="12" height="12" stroke="white" strokeWidth="2"/></svg>,
-              title: "Artisans Locaux",
-              desc: "Implantés depuis plus de 3 ans en Haute-Savoie, nous vous offrons une proximité indéfectible.",
-            },
-          ].map(({ icon, title, desc }) => (
-            <div key={title} style={{ background: "white", padding: "32px 28px", textAlign: "center", borderRight: "1px solid #eee" }}>
-              <div style={{ display: "flex", justifyContent: "center", marginBottom: 16 }}>{icon}</div>
-              <h3 style={{ fontSize: 16, fontWeight: 700, textTransform: "uppercase", color: "#1a1a1a", marginBottom: 12, letterSpacing: 0.5 }}>{title}</h3>
-              <p style={{ fontSize: 14, color: "#666", lineHeight: 1.7 }}>{desc}</p>
-            </div>
-          ))}
+        <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 0, borderTop: "1px solid #eee" }}>
+          <AtoutCard
+            icon={<svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#F5A524"/><path d="M18 28l-2-2 2-2M32 28l2-2-2-2M22 32l6-14" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>}
+            title="20 Ans D'Expérience"
+            desc="Ayant connu les évolutions des techniques de rénovation, nous mettons nos nombreuses années d'expérience à votre service."
+          />
+          <AtoutCard
+            icon={<svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#F5A524"/><path d="M17 33l3-3 3 3 3-3 3 3 3-3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M15 25h20M15 20h20M15 30h12" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>}
+            title="Devis Gratuits"
+            desc="N'hésitez plus, demandez une estimation et un devis gratuitement afin de chiffrer votre projet avec précision."
+          />
+          <AtoutCard
+            icon={<svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#F5A524"/><path d="M10 28L25 14L40 28" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/><rect x="19" y="28" width="12" height="12" stroke="white" strokeWidth="2"/></svg>}
+            title="Artisans Locaux"
+            desc="Implantés depuis plus de 3 ans en Haute-Savoie, nous vous offrons une proximité indéfectible."
+          />
         </div>
       </section>
 
