@@ -131,23 +131,20 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 0, borderTop: "1px solid #eee" }}>
           <AtoutCard
             icon={
-              <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
-                <circle cx="25" cy="25" r="25" fill="#FF9800"/>
-                {/* Screwdriver + Wrench crossed */}
-                <g transform="translate(25,25)">
-                  {/* Wrench */}
-                  <g transform="rotate(-45)">
-                    <rect x="-3" y="-12" width="6" height="16" rx="2" fill="white"/>
-                    <rect x="-6" y="-14" width="12" height="5" rx="2.5" fill="white"/>
-                    <rect x="-4" y="4" width="8" height="6" rx="1" fill="white"/>
-                    <polygon points="-4,10 4,10 5,14 -5,14" fill="white"/>
-                  </g>
-                  {/* Screwdriver */}
-                  <g transform="rotate(135)">
-                    <rect x="-2" y="-13" width="4" height="18" rx="1" fill="white"/>
-                    <rect x="-4" y="-15" width="8" height="4" rx="1" fill="white"/>
-                    <polygon points="-2,5 2,5 3,14 -3,14" fill="white"/>
-                  </g>
+              <svg width="78" height="78" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="50" fill="#FF9800"/>
+                {/* Wrench going top-left → bottom-right */}
+                <g transform="translate(50,50) rotate(45)">
+                  <rect x="-5" y="-4" width="10" height="28" rx="3" fill="white"/>
+                  <circle cx="0" cy="-14" r="11" fill="white"/>
+                  <circle cx="0" cy="-14" r="6" fill="#FF9800"/>
+                  <rect x="-4.5" y="-20" width="9" height="7" fill="#FF9800"/>
+                </g>
+                {/* Screwdriver going top-right → bottom-left */}
+                <g transform="translate(50,50) rotate(-45)">
+                  <rect x="-4" y="-22" width="8" height="13" rx="3" fill="white"/>
+                  <rect x="-2.5" y="-9" width="5" height="22" fill="white"/>
+                  <polygon points="-4,13 4,13 3,18 -3,18" fill="white"/>
                 </g>
               </svg>
             }
@@ -156,25 +153,22 @@ export default function Home() {
           />
           <AtoutCard
             icon={
-              <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
-                <circle cx="25" cy="25" r="25" fill="#FF9800"/>
-                {/* Pencil + Ruler crossed */}
-                <g transform="translate(25,25)">
-                  {/* Pencil diagonal */}
-                  <g transform="rotate(-45)">
-                    <rect x="-3" y="-13" width="6" height="20" rx="1.5" fill="white"/>
-                    <polygon points="-3,7 3,7 0,13" fill="white"/>
-                    <rect x="-3" y="-15" width="6" height="3" rx="1" fill="white"/>
-                  </g>
-                  {/* Ruler diagonal */}
-                  <g transform="rotate(45)">
-                    <rect x="-3" y="-14" width="6" height="28" rx="1.5" fill="white"/>
-                    <rect x="-3" y="-11" width="4" height="1.5" fill="#FF9800"/>
-                    <rect x="-3" y="-6" width="4" height="1.5" fill="#FF9800"/>
-                    <rect x="-3" y="-1" width="4" height="1.5" fill="#FF9800"/>
-                    <rect x="-3" y="4" width="4" height="1.5" fill="#FF9800"/>
-                    <rect x="-3" y="9" width="4" height="1.5" fill="#FF9800"/>
-                  </g>
+              <svg width="78" height="78" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="50" fill="#FF9800"/>
+                {/* Pencil going top-right → bottom-left */}
+                <g transform="translate(50,50) rotate(-45)">
+                  <rect x="-4" y="-20" width="8" height="26" rx="2" fill="white"/>
+                  <polygon points="-4,6 4,6 0,14" fill="white"/>
+                  <rect x="-4" y="-24" width="8" height="5" rx="1.5" fill="white"/>
+                </g>
+                {/* Ruler going top-left → bottom-right */}
+                <g transform="translate(50,50) rotate(45)">
+                  <rect x="-5" y="-22" width="10" height="44" rx="2" fill="white"/>
+                  <rect x="-5" y="-15" width="6" height="2" fill="#FF9800"/>
+                  <rect x="-5" y="-8" width="6" height="2" fill="#FF9800"/>
+                  <rect x="-5" y="-1" width="6" height="2" fill="#FF9800"/>
+                  <rect x="-5" y="6" width="6" height="2" fill="#FF9800"/>
+                  <rect x="-5" y="13" width="6" height="2" fill="#FF9800"/>
                 </g>
               </svg>
             }
@@ -183,12 +177,13 @@ export default function Home() {
           />
           <AtoutCard
             icon={
-              <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
-                <circle cx="25" cy="25" r="25" fill="#FF9800"/>
-                {/* House with person */}
-                <path d="M25 12L13 22v16h8v-9h8v9h8V22L25 12z" fill="white"/>
-                <circle cx="25" cy="20" r="3.5" fill="#FF9800"/>
-                <path d="M19 38c0-3.3 2.7-6 6-6s6 2.7 6 6" fill="#FF9800"/>
+              <svg width="78" height="78" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="50" fill="#FF9800"/>
+                {/* House */}
+                <path d="M50 18L20 42v40h20V62h20v20h20V42L50 18z" fill="white"/>
+                {/* Person inside house */}
+                <circle cx="50" cy="36" r="6" fill="#FF9800"/>
+                <path d="M38 62c0-6.6 5.4-12 12-12s12 5.4 12 12" fill="#FF9800"/>
               </svg>
             }
             title="Artisans Locaux"
