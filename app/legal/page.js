@@ -7,7 +7,7 @@ export const metadata = {
 export default function Legal() {
   return (
     <>
-      <section style={{ background: "#F5A524", padding: "40px 20px", textAlign: "center" }}>
+      <section style={{ background: "#FF9800", padding: "40px 20px", textAlign: "center" }}>
         <h1 style={{ color: "white", fontSize: "clamp(1.8rem,4vw,2.8rem)", fontWeight: 900, margin: 0 }}>Mentions légales</h1>
         <p style={{ color: "rgba(255,255,255,0.85)", marginTop: 8 }}>
           <Link href="/" style={{ color: "white" }}>Accueil</Link> &rsaquo; Mentions légales
@@ -17,7 +17,7 @@ export default function Legal() {
       <section style={{ padding: "64px 20px", background: "#fff" }}>
         <div style={{ maxWidth: 900, margin: "0 auto", lineHeight: 1.9, color: "#444", fontSize: 15 }}>
           <p style={{ marginBottom: 32, color: "#666" }}>
-            Pour toutes demandes veuillez vous référer à la rubrique <Link href="/contact" style={{ color: "#F5A524" }}>Contact</Link>.
+            Pour toutes demandes veuillez vous référer à la rubrique <Link href="/contact" style={{ color: "#FF9800" }}>Contact</Link>.
           </p>
 
           <h2 style={{ fontSize: "1.4rem", fontWeight: 700, color: "#1a1a1a", marginBottom: 16 }}>CGU — Conditions générales d'utilisation</h2>

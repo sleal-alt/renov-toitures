@@ -28,7 +28,7 @@ export default function ContactForm() {
       <input style={field} type="email" name="email" placeholder="Votre email *" value={form.email} onChange={handle} required />
       <input style={field} type="tel" name="telephone" placeholder="Votre téléphone" value={form.telephone} onChange={handle} />
       <textarea style={{ ...field, height: 160, resize: "vertical" }} name="message" placeholder="Décrivez votre projet *" value={form.message} onChange={handle} required />
-      <button type="submit" style={{ background: "#F5A524", color: "white", padding: "14px 32px", border: "none", borderRadius: 4, fontWeight: 700, fontSize: 16, cursor: "pointer", width: "100%" }}>
+      <button type="submit" style={{ background: "#FF9800", color: "white", padding: "14px 32px", border: "none", borderRadius: 4, fontWeight: 700, fontSize: 16, cursor: "pointer", width: "100%" }}>
         Envoyer ma demande
       </button>
     </form>

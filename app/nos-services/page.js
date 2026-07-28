@@ -55,7 +55,7 @@ const SERVICES = [
 export default function NosServices() {
   return (
     <>
-      <section style={{ background: "#F5A524", padding: "40px 20px", textAlign: "center" }}>
+      <section style={{ background: "#FF9800", padding: "40px 20px", textAlign: "center" }}>
         <h1 style={{ color: "white", fontSize: "clamp(1.8rem,4vw,2.8rem)", fontWeight: 900, margin: 0 }}>Nos Services</h1>
         <p style={{ color: "rgba(255,255,255,0.85)", marginTop: 8 }}>
           <Link href="/" style={{ color: "white" }}>Accueil</Link> &rsaquo; Nos Services
@@ -75,7 +75,7 @@ export default function NosServices() {
                 <ul style={{ paddingLeft: 20, margin: "0 0 20px", color: "#555", fontSize: 14, lineHeight: 2 }}>
                   {items.map(item => <li key={item}>{item}</li>)}
                 </ul>
-                <Link href={href || "/contact"} style={{ background: "#F5A524", color: "white", padding: "10px 22px", borderRadius: 4, fontWeight: 700, textDecoration: "none", fontSize: 14 }}>
+                <Link href={href || "/contact"} style={{ background: "#FF9800", color: "white", padding: "10px 22px", borderRadius: 4, fontWeight: 700, textDecoration: "none", fontSize: 14 }}>
                   Demander un devis
                 </Link>
               </div>
@@ -84,11 +84,11 @@ export default function NosServices() {
         </div>
       </section>
 
-      <section style={{ background: "#F5A524", padding: "48px 20px", textAlign: "center" }}>
+      <section style={{ background: "#FF9800", padding: "48px 20px", textAlign: "center" }}>
         <h2 style={{ color: "white", fontSize: "clamp(1.4rem,3vw,2rem)", fontWeight: 700, marginBottom: 20 }}>
           Un projet ? Contactez-nous pour un devis gratuit
         </h2>
-        <a href="tel:0603538400" style={{ background: "white", color: "#F5A524", padding: "14px 36px", borderRadius: 4, fontWeight: 700, textDecoration: "none", fontSize: 18, display: "inline-block" }}>
+        <a href="tel:0603538400" style={{ background: "white", color: "#FF9800", padding: "14px 36px", borderRadius: 4, fontWeight: 700, textDecoration: "none", fontSize: 18, display: "inline-block" }}>
           📞 06 03 53 84 00
         </a>
       </section>

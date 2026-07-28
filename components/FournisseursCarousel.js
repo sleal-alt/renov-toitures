@@ -38,7 +38,7 @@ export default function FournisseursCarousel() {
           <button
             key={i}
             onClick={() => setStart(i)}
-            style={{ width: 10, height: 10, borderRadius: "50%", border: "none", background: i === start ? "#F5A524" : "#ddd", cursor: "pointer", padding: 0 }}
+            style={{ width: 10, height: 10, borderRadius: "50%", border: "none", background: i === start ? "#FF9800" : "#ddd", cursor: "pointer", padding: 0 }}
           />
         ))}
       </div>

@@ -9,7 +9,7 @@ export const metadata = {
 export default function Contact() {
   return (
     <>
-      <section style={{ background: "#F5A524", padding: "40px 20px", textAlign: "center" }}>
+      <section style={{ background: "#FF9800", padding: "40px 20px", textAlign: "center" }}>
         <h1 style={{ color: "white", fontSize: "clamp(1.8rem,4vw,2.8rem)", fontWeight: 900, margin: 0 }}>Contact</h1>
         <p style={{ color: "rgba(255,255,255,0.85)", marginTop: 8 }}>
           <Link href="/" style={{ color: "white" }}>Accueil</Link> &rsaquo; Contact
@@ -30,7 +30,7 @@ export default function Contact() {
                 { icon: "🕐", label: "Horaires", value: "Lundi – Vendredi\n8h00 – 18h00" },
               ].map(({ icon, label, value, href }) => (
                 <div key={label} style={{ display: "flex", gap: 16, alignItems: "flex-start" }}>
-                  <div style={{ width: 44, height: 44, background: "#F5A524", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, flexShrink: 0 }}>{icon}</div>
+                  <div style={{ width: 44, height: 44, background: "#FF9800", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, flexShrink: 0 }}>{icon}</div>
                   <div>
                     <p style={{ fontWeight: 700, marginBottom: 4, color: "#1a1a1a" }}>{label}</p>
                     {href ? (

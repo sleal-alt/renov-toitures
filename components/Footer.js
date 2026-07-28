@@ -12,7 +12,7 @@ export default function Footer() {
           <p style={{ fontSize: 14, lineHeight: 1.8, color: "#aaa", marginBottom: 16 }}>
             Votre entreprise de rénovation de toiture à Bonne en Haute – Savoie.
           </p>
-          <span style={{ color: "#F5A524", fontWeight: 700, fontSize: 14 }}>Nos prestations sont garanties décennale</span>
+          <span style={{ color: "#FF9800", fontWeight: 700, fontSize: 14 }}>Nos prestations sont garanties décennale</span>
         </div>
 
         {/* Col 2 */}
@@ -26,7 +26,7 @@ export default function Footer() {
             ].map(({ label, href }) => (
               <li key={label} style={{ marginBottom: 10, display: "flex", alignItems: "center", gap: 10 }}>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M3 8l4 4 6-8" stroke="#F5A524" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M3 8l4 4 6-8" stroke="#FF9800" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
                 <Link href={href} style={{ color: "#aaa", textDecoration: "none", fontSize: 14 }}>{label}</Link>
               </li>

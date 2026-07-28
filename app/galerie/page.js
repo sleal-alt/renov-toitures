@@ -67,7 +67,7 @@ const PHOTOS = [
 export default function Galerie() {
   return (
     <>
-      <section style={{ background: "#F5A524", padding: "40px 20px", textAlign: "center" }}>
+      <section style={{ background: "#FF9800", padding: "40px 20px", textAlign: "center" }}>
         <h1 style={{ color: "white", fontSize: "clamp(1.8rem,4vw,2.8rem)", fontWeight: 900, margin: 0 }}>Galerie</h1>
         <p style={{ color: "rgba(255,255,255,0.85)", marginTop: 8 }}>
           <Link href="/" style={{ color: "white" }}>Accueil</Link> &rsaquo; Galerie
@@ -94,11 +94,11 @@ export default function Galerie() {
         </div>
       </section>
 
-      <section style={{ background: "#F5A524", padding: "40px 20px", textAlign: "center" }}>
+      <section style={{ background: "#FF9800", padding: "40px 20px", textAlign: "center" }}>
         <h2 style={{ color: "white", fontSize: "1.6rem", fontWeight: 700, marginBottom: 16 }}>
           Votre projet mérite le meilleur artisan
         </h2>
-        <Link href="/contact" style={{ background: "white", color: "#F5A524", padding: "12px 32px", borderRadius: 4, fontWeight: 700, textDecoration: "none", fontSize: 16 }}>
+        <Link href="/contact" style={{ background: "white", color: "#FF9800", padding: "12px 32px", borderRadius: 4, fontWeight: 700, textDecoration: "none", fontSize: 16 }}>
           Demander un devis gratuit
         </Link>
       </section>

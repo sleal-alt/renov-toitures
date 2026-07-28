@@ -9,37 +9,37 @@ import AtoutCard from "@/components/AtoutCard";
 const SERVICES = [
   {
     title: "Rénovation Toits",
-    icon: <svg width="52" height="52" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="4" fill="#F5A524" opacity="0.12"/><path d="M10 28L26 12L42 28" stroke="#F5A524" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/><rect x="18" y="28" width="16" height="14" stroke="#F5A524" strokeWidth="2.5" strokeLinejoin="round"/></svg>,
+    icon: <svg width="52" height="52" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="4" fill="#FF9800" opacity="0.12"/><path d="M10 28L26 12L42 28" stroke="#FF9800" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/><rect x="18" y="28" width="16" height="14" stroke="#FF9800" strokeWidth="2.5" strokeLinejoin="round"/></svg>,
     items: ["Charpente traditionnelle en bois : abris de voiture, abris de jardin, charpente de maison", "Couverture tuile ou bac-acier", "Pose d'ornements de toiture"],
     images: ["/images/8-027-scaled.jpg", "/images/IMG-20220314-WA0028-e1648554647410.jpg"],
   },
   {
     title: "Rénovation de Façade",
-    icon: <svg width="52" height="52" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="4" fill="#F5A524" opacity="0.12"/><rect x="10" y="14" width="32" height="24" rx="2" stroke="#F5A524" strokeWidth="2.5"/><path d="M10 22h32M26 22v16" stroke="#F5A524" strokeWidth="2.5"/></svg>,
+    icon: <svg width="52" height="52" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="4" fill="#FF9800" opacity="0.12"/><rect x="10" y="14" width="32" height="24" rx="2" stroke="#FF9800" strokeWidth="2.5"/><path d="M10 22h32M26 22v16" stroke="#FF9800" strokeWidth="2.5"/></svg>,
     items: ["Enduits à la chaux", "Peinture extérieure", "Revêtement extérieur", "Sablage de chalet"],
     video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
   {
     title: "Zinguerie",
-    icon: <svg width="52" height="52" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="4" fill="#F5A524" opacity="0.12"/><path d="M10 20h32v4H10zM10 28h32v4H10z" stroke="#F5A524" strokeWidth="2.5" strokeLinejoin="round"/><path d="M16 20v16M26 20v16M36 20v16" stroke="#F5A524" strokeWidth="2"/></svg>,
+    icon: <svg width="52" height="52" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="4" fill="#FF9800" opacity="0.12"/><path d="M10 20h32v4H10zM10 28h32v4H10z" stroke="#FF9800" strokeWidth="2.5" strokeLinejoin="round"/><path d="M16 20v16M26 20v16M36 20v16" stroke="#FF9800" strokeWidth="2"/></svg>,
     items: ["Changement des chéneaux", "Tuyaux de descente, garniture de cheminée", "Habillage planche de rive"],
     images: ["/images/8-100-scaled.jpg", "/images/IMG-20220314-WA0034-e1648554604726.jpg"],
   },
   {
     title: "Pose Vélux",
-    icon: <svg width="52" height="52" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="4" fill="#F5A524" opacity="0.12"/><rect x="14" y="14" width="24" height="24" rx="2" stroke="#F5A524" strokeWidth="2.5"/><path d="M14 26h24M26 14v24" stroke="#F5A524" strokeWidth="2"/></svg>,
+    icon: <svg width="52" height="52" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="4" fill="#FF9800" opacity="0.12"/><rect x="14" y="14" width="24" height="24" rx="2" stroke="#FF9800" strokeWidth="2.5"/><path d="M14 26h24M26 14v24" stroke="#FF9800" strokeWidth="2"/></svg>,
     items: ["Création ou changement de fenêtre de toit type Velux"],
     images: ["/images/IMG_0188.jpg", "/images/IMG_0187.jpg"],
   },
   {
     title: "Traitement et Protection",
-    icon: <svg width="52" height="52" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="4" fill="#F5A524" opacity="0.12"/><path d="M26 10c0 0-14 7-14 18a14 14 0 0028 0C40 17 26 10 26 10z" stroke="#F5A524" strokeWidth="2.5" strokeLinejoin="round"/><path d="M20 28c0 4 2.7 6 6 6" stroke="#F5A524" strokeWidth="2" strokeLinecap="round"/></svg>,
+    icon: <svg width="52" height="52" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="4" fill="#FF9800" opacity="0.12"/><path d="M26 10c0 0-14 7-14 18a14 14 0 0028 0C40 17 26 10 26 10z" stroke="#FF9800" strokeWidth="2.5" strokeLinejoin="round"/><path d="M20 28c0 4 2.7 6 6 6" stroke="#FF9800" strokeWidth="2" strokeLinecap="round"/></svg>,
     items: ["Préventif et curatif", "Revêtement hydrofuge", "Traitement fongicide"],
     images: ["/images/IMG-20220314-WA0039-e1648554999215.jpg", "/images/IMG-20220314-WA0030-e1648554661194.jpg"],
   },
   {
     title: "Isolation",
-    icon: <svg width="52" height="52" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="4" fill="#F5A524" opacity="0.12"/><path d="M26 10L26 10" stroke="#F5A524" strokeWidth="2" strokeLinecap="round"/><path d="M26 8v4M18.5 10.5l2.8 2.8M13 18h4M10.5 26H8M13 34l2.8-2.8M26 36v4M33.2 33.2L36 36M38 26h4M38 18l-2.8 2.8M33.2 13.3L36 10.5" stroke="#F5A524" strokeWidth="2" strokeLinecap="round"/><circle cx="26" cy="26" r="8" stroke="#F5A524" strokeWidth="2.5"/></svg>,
+    icon: <svg width="52" height="52" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="4" fill="#FF9800" opacity="0.12"/><path d="M26 10L26 10" stroke="#FF9800" strokeWidth="2" strokeLinecap="round"/><path d="M26 8v4M18.5 10.5l2.8 2.8M13 18h4M10.5 26H8M13 34l2.8-2.8M26 36v4M33.2 33.2L36 36M38 26h4M38 18l-2.8 2.8M33.2 13.3L36 10.5" stroke="#FF9800" strokeWidth="2" strokeLinecap="round"/><circle cx="26" cy="26" r="8" stroke="#FF9800" strokeWidth="2.5"/></svg>,
     items: ["Isolation extérieure", "Isolation des combles", "Isolation de toiture"],
     images: ["/images/IMG-20220314-WA0035-e1648554629182.jpg"],
   },
@@ -47,32 +47,32 @@ const SERVICES = [
 
 const VALEURS = [
   {
-    icon: <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#F5A524"/><path d="M12 24c0-2.2 3.6-4 8-4s8 1.8 8 4" stroke="white" strokeWidth="2" strokeLinecap="round"/><circle cx="20" cy="15" r="4" stroke="white" strokeWidth="2"/><circle cx="12" cy="16" r="3" stroke="white" strokeWidth="1.5"/><circle cx="28" cy="16" r="3" stroke="white" strokeWidth="1.5"/><path d="M9 23c0-1.7 1.3-3 3-3M28 23c1.7 0 3 1.3 3 3" stroke="white" strokeWidth="1.5" strokeLinecap="round"/></svg>,
+    icon: <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#FF9800"/><path d="M12 24c0-2.2 3.6-4 8-4s8 1.8 8 4" stroke="white" strokeWidth="2" strokeLinecap="round"/><circle cx="20" cy="15" r="4" stroke="white" strokeWidth="2"/><circle cx="12" cy="16" r="3" stroke="white" strokeWidth="1.5"/><circle cx="28" cy="16" r="3" stroke="white" strokeWidth="1.5"/><path d="M9 23c0-1.7 1.3-3 3-3M28 23c1.7 0 3 1.3 3 3" stroke="white" strokeWidth="1.5" strokeLinecap="round"/></svg>,
     title: "Artisan Expert",
     desc: "Nous mettons nos 20 ans d'expérience à votre disposition.",
   },
   {
-    icon: <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#F5A524"/><circle cx="20" cy="18" r="5" stroke="white" strokeWidth="2"/><path d="M15 28c0-2.8 2.2-5 5-5s5 2.2 5 5" stroke="white" strokeWidth="2" strokeLinecap="round"/><path d="M25 14l2-2M28 18h2M25 22l2 2" stroke="white" strokeWidth="1.5" strokeLinecap="round"/></svg>,
+    icon: <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#FF9800"/><circle cx="20" cy="18" r="5" stroke="white" strokeWidth="2"/><path d="M15 28c0-2.8 2.2-5 5-5s5 2.2 5 5" stroke="white" strokeWidth="2" strokeLinecap="round"/><path d="M25 14l2-2M28 18h2M25 22l2 2" stroke="white" strokeWidth="1.5" strokeLinecap="round"/></svg>,
     title: "Facilités de Paiement",
     desc: "Nous vous proposons des paiements en plusieurs fois.",
   },
   {
-    icon: <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#F5A524"/><path d="M12 20l6 6 10-12" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>,
+    icon: <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#FF9800"/><path d="M12 20l6 6 10-12" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>,
     title: "Devis Gratuits",
     desc: "Obtenez un devis adapté et gratuit pour votre projet.",
   },
   {
-    icon: <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#F5A524"/><rect x="13" y="12" width="14" height="18" rx="2" stroke="white" strokeWidth="2"/><path d="M17 17h6M17 21h4M25 26l4 2-1-4" stroke="white" strokeWidth="1.5" strokeLinecap="round"/></svg>,
+    icon: <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#FF9800"/><rect x="13" y="12" width="14" height="18" rx="2" stroke="white" strokeWidth="2"/><path d="M17 17h6M17 21h4M25 26l4 2-1-4" stroke="white" strokeWidth="1.5" strokeLinecap="round"/></svg>,
     title: "Rénovation Sur-Mesure",
     desc: "Laissez-nous vous conseiller pour votre projet afin d'utiliser la meilleure solution pour votre besoin.",
   },
   {
-    icon: <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#F5A524"/><path d="M14 22c2 2 8 4 12 0" stroke="white" strokeWidth="2" strokeLinecap="round"/><path d="M12 28c2 2 5 3 8 3s6-1 8-3" stroke="white" strokeWidth="2" strokeLinecap="round"/><circle cx="16" cy="16" r="3" stroke="white" strokeWidth="1.5"/><circle cx="24" cy="16" r="3" stroke="white" strokeWidth="1.5"/></svg>,
+    icon: <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#FF9800"/><path d="M14 22c2 2 8 4 12 0" stroke="white" strokeWidth="2" strokeLinecap="round"/><path d="M12 28c2 2 5 3 8 3s6-1 8-3" stroke="white" strokeWidth="2" strokeLinecap="round"/><circle cx="16" cy="16" r="3" stroke="white" strokeWidth="1.5"/><circle cx="24" cy="16" r="3" stroke="white" strokeWidth="1.5"/></svg>,
     title: "Suivi Personnalisé",
     desc: "Nous restons disponibles après et pendant les travaux pour vous offrir un suivi de qualité.",
   },
   {
-    icon: <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#F5A524"/><rect x="10" y="20" width="20" height="10" rx="2" stroke="white" strokeWidth="2"/><circle cx="14" cy="30" r="2.5" fill="white"/><circle cx="26" cy="30" r="2.5" fill="white"/><path d="M16 20v-4a4 4 0 018 0v4" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>,
+    icon: <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#FF9800"/><rect x="10" y="20" width="20" height="10" rx="2" stroke="white" strokeWidth="2"/><circle cx="14" cy="30" r="2.5" fill="white"/><circle cx="26" cy="30" r="2.5" fill="white"/><path d="M16 20v-4a4 4 0 018 0v4" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>,
     title: "Déplacements Gratuits",
     desc: "Nous nous déplaçons dans toute la Haute-Savoie gratuitement pour évaluer vos travaux.",
   },
@@ -130,17 +130,17 @@ export default function Home() {
       <section style={{ background: "#f5f5f5", padding: "0" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 0, borderTop: "1px solid #eee" }}>
           <AtoutCard
-            icon={<svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#F5A524"/><path d="M18 28l-2-2 2-2M32 28l2-2-2-2M22 32l6-14" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>}
+            icon={<svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#FF9800"/><path d="M18 28l-2-2 2-2M32 28l2-2-2-2M22 32l6-14" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>}
             title="20 Ans D'Expérience"
             desc="Ayant connu les évolutions des techniques de rénovation, nous mettons nos nombreuses années d'expérience à votre service."
           />
           <AtoutCard
-            icon={<svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#F5A524"/><path d="M17 33l3-3 3 3 3-3 3 3 3-3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M15 25h20M15 20h20M15 30h12" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>}
+            icon={<svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#FF9800"/><path d="M17 33l3-3 3 3 3-3 3 3 3-3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M15 25h20M15 20h20M15 30h12" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>}
             title="Devis Gratuits"
             desc="N'hésitez plus, demandez une estimation et un devis gratuitement afin de chiffrer votre projet avec précision."
           />
           <AtoutCard
-            icon={<svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#F5A524"/><path d="M10 28L25 14L40 28" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/><rect x="19" y="28" width="12" height="12" stroke="white" strokeWidth="2"/></svg>}
+            icon={<svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#FF9800"/><path d="M10 28L25 14L40 28" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/><rect x="19" y="28" width="12" height="12" stroke="white" strokeWidth="2"/></svg>}
             title="Artisans Locaux"
             desc="Implantés depuis plus de 3 ans en Haute-Savoie, nous vous offrons une proximité indéfectible."
           />
@@ -158,8 +158,8 @@ export default function Home() {
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
             {[
-              { icon: <svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#F5A524"/><circle cx="25" cy="25" r="10" stroke="white" strokeWidth="2.5"/><path d="M25 19v6l4 4" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>, title: "Réactivité", desc: "Nous vous rappelons dès que possible pour répondre à toutes vos interrogations." },
-              { icon: <svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#F5A524"/><path d="M17 25c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8" stroke="white" strokeWidth="2.5" strokeLinecap="round"/><circle cx="25" cy="25" r="3" fill="white"/></svg>, title: "Savoir-Faire", desc: "Travailler avec Rénover ma toiture, c'est s'assurer de confier votre projet à un artisan qualifié." },
+              { icon: <svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#FF9800"/><circle cx="25" cy="25" r="10" stroke="white" strokeWidth="2.5"/><path d="M25 19v6l4 4" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>, title: "Réactivité", desc: "Nous vous rappelons dès que possible pour répondre à toutes vos interrogations." },
+              { icon: <svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#FF9800"/><path d="M17 25c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8" stroke="white" strokeWidth="2.5" strokeLinecap="round"/><circle cx="25" cy="25" r="3" fill="white"/></svg>, title: "Savoir-Faire", desc: "Travailler avec Rénover ma toiture, c'est s'assurer de confier votre projet à un artisan qualifié." },
             ].map(({ icon, title, desc }) => (
               <div key={title} style={{ display: "flex", gap: 20, alignItems: "flex-start" }}>
                 <div style={{ flexShrink: 0 }}>{icon}</div>
@@ -219,7 +219,7 @@ export default function Home() {
       </section>
 
       {/* ── CTA ORANGE + VIDEO ── */}
-      <section style={{ background: "#F5A524", padding: "48px 20px" }}>
+      <section style={{ background: "#FF9800", padding: "48px 20px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 40, flexWrap: "wrap" }}>
           <div style={{ flex: "1 1 320px" }}>
             <h2 style={{ color: "white", fontSize: "clamp(1.4rem,2.5vw,2rem)", fontWeight: 900, marginBottom: 24, lineHeight: 1.3, textTransform: "uppercase" }}>

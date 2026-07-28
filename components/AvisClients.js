@@ -12,7 +12,7 @@ const AVIS = [
 ];
 
 function Stars() {
-  return <span style={{ color: "#F5A524", fontSize: 16 }}>★★★★★</span>;
+  return <span style={{ color: "#FF9800", fontSize: 16 }}>★★★★★</span>;
 }
 
 function GoogleIcon() {

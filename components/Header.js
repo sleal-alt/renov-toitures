@@ -23,11 +23,11 @@ export default function Header() {
         </Link>
         <div style={{ display: "flex", gap: 40, alignItems: "center", flexWrap: "wrap" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <span style={{ color: "#F5A524", fontSize: 22 }}>🕐</span>
+            <span style={{ color: "#FF9800", fontSize: 22 }}>🕐</span>
             <span style={{ fontSize: 16, fontWeight: 600, color: "#333" }}>Lun - Ven : 8h – 18h00</span>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <span style={{ color: "#F5A524", fontSize: 22 }}>📞</span>
+            <span style={{ color: "#FF9800", fontSize: 22 }}>📞</span>
             <div>
               <div style={{ fontSize: 13, color: "#888", fontWeight: 600 }}>Appelez Nous :</div>
               <a href="tel:0603538400" style={{ fontSize: 22, fontWeight: 800, color: "#222", textDecoration: "none" }}>06 03 53 84 00</a>
@@ -37,7 +37,7 @@ export default function Header() {
       </div>
 
       {/* Barre nav orange */}
-      <nav style={{ background: "#F5A524", position: "relative" }}>
+      <nav style={{ background: "#FF9800", position: "relative" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
 
           {/* Desktop nav */}

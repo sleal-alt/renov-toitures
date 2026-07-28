@@ -9,7 +9,7 @@ export const metadata = {
 export default function DemoussageToiture() {
   return (
     <>
-      <section style={{ background: "#F5A524", padding: "40px 20px", textAlign: "center" }}>
+      <section style={{ background: "#FF9800", padding: "40px 20px", textAlign: "center" }}>
         <h1 style={{ color: "white", fontSize: "clamp(1.8rem,4vw,2.8rem)", fontWeight: 900, margin: 0 }}>Démoussage toiture Annemasse</h1>
         <p style={{ color: "rgba(255,255,255,0.85)", marginTop: 8 }}>
           Par Renov toitures façades Bonne, l'artisan de votre région
@@ -28,7 +28,7 @@ export default function DemoussageToiture() {
             { title: "Artisan local", desc: "Basés depuis plus de 3 ans en Haute-Savoie, nous vous offrons une proximité indéfectible." },
           ].map(({ title, desc }) => (
             <div key={title} style={{ textAlign: "center", padding: "20px 16px", borderRadius: 8, background: "#f9f9f9" }}>
-              <h3 style={{ color: "#F5A524", fontSize: 17, fontWeight: 700, marginBottom: 10 }}>{title}</h3>
+              <h3 style={{ color: "#FF9800", fontSize: 17, fontWeight: 700, marginBottom: 10 }}>{title}</h3>
               <p style={{ fontSize: 14, color: "#666", lineHeight: 1.7 }}>{desc}</p>
             </div>
           ))}
@@ -48,15 +48,15 @@ export default function DemoussageToiture() {
             <p style={{ fontSize: 15, lineHeight: 1.9, color: "#555", marginBottom: 16 }}>
               Nos services de démoussage de toiture sont disponibles à Annemasse et dans toute la Haute-Savoie. Nous intervenons rapidement avec du matériel professionnel adapté à chaque type de couverture.
             </p>
-            <div style={{ background: "#F5A524", color: "white", padding: 20, borderRadius: 8, marginBottom: 24 }}>
+            <div style={{ background: "#FF9800", color: "white", padding: 20, borderRadius: 8, marginBottom: 24 }}>
               <p style={{ fontWeight: 700, fontSize: 17, marginBottom: 4 }}>Appelez-nous :</p>
               <a href="tel:0603538400" style={{ color: "white", textDecoration: "none", fontSize: 24, fontWeight: 900 }}>06 03 53 84 00</a>
             </div>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-              <Link href="/contact" style={{ background: "#F5A524", color: "white", padding: "12px 24px", borderRadius: 4, fontWeight: 700, textDecoration: "none" }}>
+              <Link href="/contact" style={{ background: "#FF9800", color: "white", padding: "12px 24px", borderRadius: 4, fontWeight: 700, textDecoration: "none" }}>
                 Nous contacter
               </Link>
-              <Link href="/contact" style={{ border: "2px solid #F5A524", color: "#F5A524", padding: "10px 22px", borderRadius: 4, fontWeight: 700, textDecoration: "none" }}>
+              <Link href="/contact" style={{ border: "2px solid #FF9800", color: "#FF9800", padding: "10px 22px", borderRadius: 4, fontWeight: 700, textDecoration: "none" }}>
                 Demandez une estimation
               </Link>
             </div>
@@ -93,7 +93,7 @@ export default function DemoussageToiture() {
       </section>
 
       {/* CTA */}
-      <section style={{ background: "#F5A524", padding: "48px 20px", textAlign: "center" }}>
+      <section style={{ background: "#FF9800", padding: "48px 20px", textAlign: "center" }}>
         <h2 style={{ color: "white", fontSize: "1.6rem", fontWeight: 700, marginBottom: 8 }}>
           Renov toitures façades à Bonne
         </h2>
@@ -101,7 +101,7 @@ export default function DemoussageToiture() {
           Nous proposons également un large panel de services pour vos toitures !
         </p>
         <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-          <a href="tel:0603538400" style={{ background: "white", color: "#F5A524", padding: "14px 32px", borderRadius: 4, fontWeight: 700, textDecoration: "none", fontSize: 16 }}>
+          <a href="tel:0603538400" style={{ background: "white", color: "#FF9800", padding: "14px 32px", borderRadius: 4, fontWeight: 700, textDecoration: "none", fontSize: 16 }}>
             📞 06 03 53 84 00
           </a>
           <Link href="/nos-services" style={{ border: "2px solid white", color: "white", padding: "12px 30px", borderRadius: 4, fontWeight: 700, textDecoration: "none", fontSize: 16 }}>

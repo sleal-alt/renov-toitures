@@ -38,8 +38,8 @@ export default function ServiceCard({ title, icon, items, images, video }) {
             ))}
           </div>
           <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", display: "flex", gap: 4, zIndex: 2 }}>
-            <button style={{ background: "#F5A524", border: "none", color: "white", width: 28, height: 28, cursor: "pointer", fontWeight: 700, borderRadius: 2 }}>‹</button>
-            <button style={{ background: "#F5A524", border: "none", color: "white", width: 28, height: 28, cursor: "pointer", fontWeight: 700, borderRadius: 2 }}>›</button>
+            <button style={{ background: "#FF9800", border: "none", color: "white", width: 28, height: 28, cursor: "pointer", fontWeight: 700, borderRadius: 2 }}>‹</button>
+            <button style={{ background: "#FF9800", border: "none", color: "white", width: 28, height: 28, cursor: "pointer", fontWeight: 700, borderRadius: 2 }}>›</button>
           </div>
         </div>
       ) : images && images.length === 1 ? (

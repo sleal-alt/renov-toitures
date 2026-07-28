@@ -10,7 +10,7 @@ export default function Entreprise() {
   return (
     <>
       {/* Bandeau */}
-      <section style={{ background: "#F5A524", padding: "40px 20px", textAlign: "center" }}>
+      <section style={{ background: "#FF9800", padding: "40px 20px", textAlign: "center" }}>
         <h1 style={{ color: "white", fontSize: "clamp(1.8rem,4vw,2.8rem)", fontWeight: 900, margin: 0 }}>Notre Entreprise</h1>
         <p style={{ color: "rgba(255,255,255,0.85)", marginTop: 8 }}>
           <Link href="/" style={{ color: "white" }}>Accueil</Link> &rsaquo; Entreprise
@@ -50,7 +50,7 @@ export default function Entreprise() {
             </div>
 
             <div style={{ marginTop: 36 }}>
-              <Link href="/contact" style={{ background: "#F5A524", color: "white", padding: "14px 32px", borderRadius: 4, fontWeight: 700, textDecoration: "none", fontSize: 16 }}>
+              <Link href="/contact" style={{ background: "#FF9800", color: "white", padding: "14px 32px", borderRadius: 4, fontWeight: 700, textDecoration: "none", fontSize: 16 }}>
                 Demander un devis gratuit
               </Link>
             </div>
@@ -60,7 +60,7 @@ export default function Entreprise() {
             <div style={{ borderRadius: 8, overflow: "hidden", marginBottom: 24 }}>
               <Image src="/images/chantier.jpeg" alt="Équipe Renov Toitures" width={600} height={400} style={{ width: "100%", height: "auto" }} />
             </div>
-            <div style={{ background: "#F5A524", color: "white", padding: 28, borderRadius: 8 }}>
+            <div style={{ background: "#FF9800", color: "white", padding: 28, borderRadius: 8 }}>
               <h3 style={{ fontSize: 20, fontWeight: 700, marginBottom: 12 }}>Nos coordonnées</h3>
               <p style={{ lineHeight: 2.2, fontSize: 15 }}>
                 📍 1119 Route des Alluaz, 74380 Bonne<br />

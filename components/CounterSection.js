@@ -41,7 +41,7 @@ export default function CounterSection() {
           <div key={label} style={{ display: "flex", alignItems: "center", gap: 16, justifyContent: "center" }}>
             <div style={{ fontSize: 40, opacity: 0.7 }}>{icon}</div>
             <div>
-              <div style={{ fontSize: "clamp(2rem,4vw,3rem)", fontWeight: 900, color: "#F5A524" }}>
+              <div style={{ fontSize: "clamp(2rem,4vw,3rem)", fontWeight: 900, color: "#FF9800" }}>
                 <Counter target={target} suffix={suffix} />
               </div>
               <div style={{ color: "#aaa", fontSize: 13, marginTop: 4, textTransform: "uppercase", letterSpacing: 0.5 }}>{label}</div>
