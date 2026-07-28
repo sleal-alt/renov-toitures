@@ -83,8 +83,17 @@ export default function Home() {
       {/* ── HERO ── */}
       <section style={{ position: "relative", minHeight: 520, display: "flex", alignItems: "center", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0 }}>
-          <Image src="/images/IMG-20220314-WA0028-e1648554647410.jpg" alt="Toiture Haute-Savoie" fill style={{ objectFit: "cover" }} priority />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.60)" }} />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
+          >
+            <source src="/images/IMG_4685.mov" type="video/mp4" />
+            <Image src="/images/IMG-20220314-WA0028-e1648554647410.jpg" alt="Toiture Haute-Savoie" fill style={{ objectFit: "cover" }} priority />
+          </video>
+          <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.55)" }} />
         </div>
         <div style={{ position: "relative", zIndex: 1, maxWidth: 1200, margin: "0 auto", padding: "80px 20px", width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 40 }}>
           <div style={{ flex: "0 0 auto", maxWidth: 640 }}>
