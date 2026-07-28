@@ -53,7 +53,7 @@ export default function AtoutCard({ icon, title, desc }) {
           justify-content: center;
           padding: 32px 28px;
           text-align: center;
-          background: #000;
+          background: #FF9800;
           transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
                       opacity 0.5s ease;
           transform: translateY(100%);
