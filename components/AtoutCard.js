@@ -11,18 +11,9 @@ export default function AtoutCard({ icon, title, desc }) {
       </div>
       {/* Back */}
       <div className="atout-back">
-        <iframe
-          className="atout-video"
-          src="https://www.youtube.com/embed/SI7Rojim7N8?autoplay=1&mute=1&loop=1&playlist=SI7Rojim7N8&controls=0&showinfo=0&rel=0&disablekb=1"
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-        />
-        <div className="atout-overlay" />
-        <div style={{ position: "relative", zIndex: 2, display: "flex", flexDirection: "column", alignItems: "center" }}>
-          <div className="atout-icon">{icon}</div>
-          <h3 className="atout-title">{title}</h3>
-          <p className="atout-desc">{desc}</p>
-        </div>
+        <div className="atout-icon">{icon}</div>
+        <h3 className="atout-title">{title}</h3>
+        <p className="atout-desc">{desc}</p>
       </div>
 
       <style jsx>{`
