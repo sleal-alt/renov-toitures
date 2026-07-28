@@ -130,17 +130,67 @@ export default function Home() {
       <section style={{ background: "#f5f5f5", padding: "0" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 0, borderTop: "1px solid #eee" }}>
           <AtoutCard
-            icon={<svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#FF9800"/><path d="M18 28l-2-2 2-2M32 28l2-2-2-2M22 32l6-14" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>}
+            icon={
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                <circle cx="25" cy="25" r="25" fill="#FF9800"/>
+                {/* Screwdriver + Wrench crossed */}
+                <g transform="translate(25,25)">
+                  {/* Wrench */}
+                  <g transform="rotate(-45)">
+                    <rect x="-3" y="-12" width="6" height="16" rx="2" fill="white"/>
+                    <rect x="-6" y="-14" width="12" height="5" rx="2.5" fill="white"/>
+                    <rect x="-4" y="4" width="8" height="6" rx="1" fill="white"/>
+                    <polygon points="-4,10 4,10 5,14 -5,14" fill="white"/>
+                  </g>
+                  {/* Screwdriver */}
+                  <g transform="rotate(135)">
+                    <rect x="-2" y="-13" width="4" height="18" rx="1" fill="white"/>
+                    <rect x="-4" y="-15" width="8" height="4" rx="1" fill="white"/>
+                    <polygon points="-2,5 2,5 3,14 -3,14" fill="white"/>
+                  </g>
+                </g>
+              </svg>
+            }
             title="20 Ans D'Expérience"
             desc="Ayant connu les évolutions des techniques de rénovation, nous mettons nos nombreuses années d'expérience à votre service."
           />
           <AtoutCard
-            icon={<svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#FF9800"/><path d="M17 33l3-3 3 3 3-3 3 3 3-3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M15 25h20M15 20h20M15 30h12" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>}
+            icon={
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                <circle cx="25" cy="25" r="25" fill="#FF9800"/>
+                {/* Pencil + Ruler crossed */}
+                <g transform="translate(25,25)">
+                  {/* Pencil diagonal */}
+                  <g transform="rotate(-45)">
+                    <rect x="-3" y="-13" width="6" height="20" rx="1.5" fill="white"/>
+                    <polygon points="-3,7 3,7 0,13" fill="white"/>
+                    <rect x="-3" y="-15" width="6" height="3" rx="1" fill="white"/>
+                  </g>
+                  {/* Ruler diagonal */}
+                  <g transform="rotate(45)">
+                    <rect x="-3" y="-14" width="6" height="28" rx="1.5" fill="white"/>
+                    <rect x="-3" y="-11" width="4" height="1.5" fill="#FF9800"/>
+                    <rect x="-3" y="-6" width="4" height="1.5" fill="#FF9800"/>
+                    <rect x="-3" y="-1" width="4" height="1.5" fill="#FF9800"/>
+                    <rect x="-3" y="4" width="4" height="1.5" fill="#FF9800"/>
+                    <rect x="-3" y="9" width="4" height="1.5" fill="#FF9800"/>
+                  </g>
+                </g>
+              </svg>
+            }
             title="Devis Gratuits"
             desc="N'hésitez plus, demandez une estimation et un devis gratuitement afin de chiffrer votre projet avec précision."
           />
           <AtoutCard
-            icon={<svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="25" fill="#FF9800"/><path d="M10 28L25 14L40 28" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/><rect x="19" y="28" width="12" height="12" stroke="white" strokeWidth="2"/></svg>}
+            icon={
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                <circle cx="25" cy="25" r="25" fill="#FF9800"/>
+                {/* House with person */}
+                <path d="M25 12L13 22v16h8v-9h8v9h8V22L25 12z" fill="white"/>
+                <circle cx="25" cy="20" r="3.5" fill="#FF9800"/>
+                <path d="M19 38c0-3.3 2.7-6 6-6s6 2.7 6 6" fill="#FF9800"/>
+              </svg>
+            }
             title="Artisans Locaux"
             desc="Implantés depuis plus de 3 ans en Haute-Savoie, nous vous offrons une proximité indéfectible."
           />
