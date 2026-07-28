@@ -1,67 +1,67 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer style={{ background: "#1a1a1a", color: "#ccc", paddingTop: 48 }}>
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 20px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 40, paddingBottom: 40 }}>
+    <footer style={{ background: "#1a1a1a", color: "#ccc" }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "48px 20px 32px", display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 40 }}>
 
-        {/* Logo + desc */}
+        {/* Col 1 */}
         <div>
-          <Image src="/images/logo-blanc.png" alt="Renov Toitures" width={140} height={70} style={{ objectFit: "contain", marginBottom: 16 }} />
-          <p style={{ fontSize: 14, lineHeight: 1.7, color: "#aaa" }}>
-            Artisan couvreur depuis plus de 20 ans en Haute-Savoie. Spécialiste en rénovation de toiture et façades à Bonne.
+          <h3 style={{ color: "white", fontSize: 16, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1, marginBottom: 16 }}>Renov Toiture</h3>
+          <p style={{ fontSize: 14, lineHeight: 1.8, color: "#aaa", marginBottom: 16 }}>
+            Votre entreprise de rénovation de toiture à Bonne en Haute – Savoie.
           </p>
+          <span style={{ color: "#F5A524", fontWeight: 700, fontSize: 14 }}>Nos prestations sont garanties décennale</span>
         </div>
 
-        {/* Contact */}
+        {/* Col 2 */}
         <div>
-          <h3 style={{ color: "#F5A524", fontSize: 16, fontWeight: 700, marginBottom: 16, textTransform: "uppercase", letterSpacing: 1 }}>Contact</h3>
-          <p style={{ fontSize: 14, lineHeight: 2, color: "#aaa" }}>
-            1119 Route des Alluaz<br />
-            74380 Bonne<br />
-            <a href="tel:0603538400" style={{ color: "#F5A524", textDecoration: "none", fontWeight: 700 }}>06 03 53 84 00</a><br />
-            <a href="mailto:reinhart.patrick@yahoo.fr" style={{ color: "#aaa", textDecoration: "none" }}>reinhart.patrick@yahoo.fr</a>
-          </p>
-        </div>
-
-        {/* Horaires */}
-        <div>
-          <h3 style={{ color: "#F5A524", fontSize: 16, fontWeight: 700, marginBottom: 16, textTransform: "uppercase", letterSpacing: 1 }}>Horaires</h3>
-          <p style={{ fontSize: 14, lineHeight: 2, color: "#aaa" }}>
-            Lundi – Vendredi<br />
-            8h00 – 18h00<br />
-            <span style={{ color: "#F5A524" }}>Devis gratuit sur rendez-vous</span>
-          </p>
-        </div>
-
-        {/* Liens */}
-        <div>
-          <h3 style={{ color: "#F5A524", fontSize: 16, fontWeight: 700, marginBottom: 16, textTransform: "uppercase", letterSpacing: 1 }}>Navigation</h3>
+          <h3 style={{ color: "white", fontSize: 16, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1, marginBottom: 16 }}>Mentions Légales</h3>
           <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
             {[
-              { label: "Accueil", href: "/" },
-              { label: "Entreprise", href: "/entreprise" },
-              { label: "Nos Services", href: "/nos-services" },
-              { label: "Galerie", href: "/galerie" },
-              { label: "Contact", href: "/contact" },
+              { label: "CGU", href: "/legal" },
+              { label: "Politique de confidentialité", href: "/legal" },
               { label: "Mentions légales", href: "/legal" },
             ].map(({ label, href }) => (
-              <li key={href} style={{ marginBottom: 8 }}>
-                <Link href={href} style={{ color: "#aaa", textDecoration: "none", fontSize: 14 }}
-                  onMouseEnter={e => e.target.style.color = "#F5A524"}
-                  onMouseLeave={e => e.target.style.color = "#aaa"}
-                >{label}</Link>
+              <li key={label} style={{ marginBottom: 10, display: "flex", alignItems: "center", gap: 10 }}>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8l4 4 6-8" stroke="#F5A524" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <Link href={href} style={{ color: "#aaa", textDecoration: "none", fontSize: 14 }}>{label}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Col 3 */}
+        <div>
+          <h3 style={{ color: "white", fontSize: 16, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1, marginBottom: 16 }}>Contact</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+            {[
+              { icon: "📞", text: "Tél: 06 03 53 84 00", href: "tel:0603538400" },
+              { icon: "🕐", text: "Lun-Ven : 8h - 19h" },
+              { icon: "📍", text: "74380 Bonne" },
+              { icon: "✉️", text: "contact@renover-ma-toiture.fr", href: "mailto:contact@renover-ma-toiture.fr" },
+            ].map(({ icon, text, href }) => (
+              <li key={text} style={{ marginBottom: 10, display: "flex", alignItems: "center", gap: 10, fontSize: 14, color: "#aaa" }}>
+                <span>{icon}</span>
+                {href ? <a href={href} style={{ color: "#aaa", textDecoration: "none" }}>{text}</a> : <span>{text}</span>}
               </li>
             ))}
           </ul>
         </div>
       </div>
 
-      <div style={{ borderTop: "1px solid #333", padding: "16px 20px", textAlign: "center", fontSize: 13, color: "#666" }}>
-        © {new Date().getFullYear()} Rénover ma Toiture — 1119 Route des Alluaz, 74380 Bonne — Tous droits réservés
+      <div style={{ borderTop: "1px solid #2a2a2a", padding: "16px 20px", textAlign: "center", fontSize: 13, color: "#555" }}>
+        © {new Date().getFullYear()} Rénover ma Toiture — Tous droits réservés
       </div>
+
+      <style>{`
+        @media (max-width: 768px) {
+          footer > div:first-child { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
     </footer>
   );
 }

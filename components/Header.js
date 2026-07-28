@@ -15,47 +15,57 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header style={{ background: "#fff", borderBottom: "1px solid #eee" }}>
-      {/* Top bar */}
-      <div style={{ borderBottom: "1px solid #f0f0f0", padding: "8px 0" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 20px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 8, color: "#555", fontSize: 14 }}>
-            <span>🕐</span>
-            <span>Lun - Ven : 8h – 18h00</span>
+    <header>
+      {/* Top bar : logo gauche + infos droite */}
+      <div style={{ background: "#fff", padding: "12px 20px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
+        <Link href="/">
+          <Image src="/images/logo.png" alt="Renov Toitures" width={150} height={75} style={{ objectFit: "contain" }} />
+        </Link>
+        <div style={{ display: "flex", gap: 40, alignItems: "center", flexWrap: "wrap" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <span style={{ color: "#F5A524", fontSize: 22 }}>🕐</span>
+            <span style={{ fontSize: 16, fontWeight: 600, color: "#333" }}>Lun - Ven : 8h – 18h00</span>
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-            <span style={{ color: "#F5A524" }}>📞</span>
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <span style={{ color: "#F5A524", fontSize: 22 }}>📞</span>
             <div>
-              <div style={{ fontSize: 11, color: "#888" }}>Appelez Nous :</div>
-              <a href="tel:0603538400" style={{ fontSize: 20, fontWeight: 700, color: "#222", textDecoration: "none" }}>06 03 53 84 00</a>
+              <div style={{ fontSize: 13, color: "#888", fontWeight: 600 }}>Appelez Nous :</div>
+              <a href="tel:0603538400" style={{ fontSize: 22, fontWeight: 800, color: "#222", textDecoration: "none" }}>06 03 53 84 00</a>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Nav */}
-      <nav style={{ background: "#F5A524" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 20px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <Link href="/" style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
-            <Image src="/images/logo-blanc.png" alt="Renov Toitures" width={120} height={60} style={{ objectFit: "contain" }} />
-          </Link>
+      {/* Barre nav orange */}
+      <nav style={{ background: "#F5A524", position: "relative" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
 
           {/* Desktop nav */}
-          <ul style={{ display: "flex", listStyle: "none", margin: 0, padding: 0, gap: 0 }} className="desktop-nav">
-            {NAV.map(({ label, href }) => (
+          <ul style={{ display: "flex", listStyle: "none", margin: 0, padding: 0 }} className="desktop-nav">
+            {NAV.map(({ label, href }, i) => (
               <li key={href}>
-                <Link href={href} style={{ display: "block", padding: "18px 20px", color: "white", textDecoration: "none", fontWeight: 600, fontSize: 14, textTransform: "uppercase", letterSpacing: 0.5, transition: "background 0.2s" }}
-                  onMouseEnter={e => e.target.style.background = "rgba(0,0,0,0.15)"}
-                  onMouseLeave={e => e.target.style.background = "transparent"}
-                >
+                <Link href={href} style={{
+                  display: "block",
+                  padding: "16px 22px",
+                  color: "white",
+                  textDecoration: "none",
+                  fontWeight: 700,
+                  fontSize: 14,
+                  textTransform: "uppercase",
+                  letterSpacing: 0.5,
+                  background: i === 0 ? "rgba(0,0,0,0.25)" : "transparent",
+                }}>
                   {label}
                 </Link>
               </li>
             ))}
           </ul>
 
+          {/* Icône loupe */}
+          <button style={{ background: "none", border: "none", color: "white", fontSize: 20, cursor: "pointer", padding: "16px 20px" }} className="desktop-nav">🔍</button>
+
           {/* Mobile burger */}
-          <button onClick={() => setOpen(!open)} style={{ background: "none", border: "none", color: "white", fontSize: 24, cursor: "pointer", padding: 8 }} className="mobile-burger">
+          <button onClick={() => setOpen(!open)} style={{ background: "none", border: "none", color: "white", fontSize: 24, cursor: "pointer", padding: 14 }} className="mobile-burger">
             {open ? "✕" : "☰"}
           </button>
         </div>
@@ -65,7 +75,7 @@ export default function Header() {
           <ul style={{ listStyle: "none", margin: 0, padding: 0, background: "#e8950f" }} className="mobile-menu">
             {NAV.map(({ label, href }) => (
               <li key={href} style={{ borderTop: "1px solid rgba(255,255,255,0.2)" }}>
-                <Link href={href} onClick={() => setOpen(false)} style={{ display: "block", padding: "14px 20px", color: "white", textDecoration: "none", fontWeight: 600, fontSize: 14, textTransform: "uppercase" }}>
+                <Link href={href} onClick={() => setOpen(false)} style={{ display: "block", padding: "14px 20px", color: "white", textDecoration: "none", fontWeight: 700, fontSize: 14, textTransform: "uppercase" }}>
                   {label}
                 </Link>
               </li>

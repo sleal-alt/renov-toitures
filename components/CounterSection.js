@@ -2,10 +2,10 @@
 import { useEffect, useRef, useState } from "react";
 
 const STATS = [
-  { target: 150, label: "Toits rénovés", suffix: "+" },
-  { target: 200, label: "Clients satisfaits", suffix: "+" },
-  { target: 3, label: "Artisans", suffix: "" },
-  { target: 20, label: "ans d'expérience", suffix: "" },
+  { icon: "🏠", target: 195, label: "Toits Rénovés", suffix: "" },
+  { icon: "👥", target: 212, label: "Clients Satisfaits", suffix: "" },
+  { icon: "👷", target: 3, label: "Artisans", suffix: "" },
+  { icon: "🕐", target: 22, label: "Ans D'Expérience", suffix: "" },
 ];
 
 function Counter({ target, suffix }) {
@@ -37,12 +37,15 @@ export default function CounterSection() {
   return (
     <section style={{ background: "#1a1a1a", padding: "48px 20px" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 32, textAlign: "center" }}>
-        {STATS.map(({ target, label, suffix }) => (
-          <div key={label}>
-            <div style={{ fontSize: "clamp(2.5rem,5vw,3.5rem)", fontWeight: 900, color: "#F5A524" }}>
-              <Counter target={target} suffix={suffix} />
+        {STATS.map(({ icon, target, label, suffix }) => (
+          <div key={label} style={{ display: "flex", alignItems: "center", gap: 16, justifyContent: "center" }}>
+            <div style={{ fontSize: 40, opacity: 0.7 }}>{icon}</div>
+            <div>
+              <div style={{ fontSize: "clamp(2rem,4vw,3rem)", fontWeight: 900, color: "#F5A524" }}>
+                <Counter target={target} suffix={suffix} />
+              </div>
+              <div style={{ color: "#aaa", fontSize: 13, marginTop: 4, textTransform: "uppercase", letterSpacing: 0.5 }}>{label}</div>
             </div>
-            <div style={{ color: "#aaa", fontSize: 15, marginTop: 8 }}>{label}</div>
           </div>
         ))}
       </div>
