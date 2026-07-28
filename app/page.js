@@ -83,17 +83,24 @@ export default function Home() {
     <>
       {/* ── HERO ── */}
       <section style={{ position: "relative", minHeight: 520, display: "flex", alignItems: "center", overflow: "hidden" }}>
-        <div style={{ position: "absolute", inset: 0 }}>
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
-          >
-            <source src="/images/IMG_4685.mov" type="video/mp4" />
-            <Image src="/images/IMG-20220314-WA0028-e1648554647410.jpg" alt="Toiture Haute-Savoie" fill style={{ objectFit: "cover" }} priority />
-          </video>
+        <div style={{ position: "absolute", inset: 0, overflow: "hidden" }}>
+          <iframe
+            src="https://www.youtube.com/embed/SI7Rojim7N8?autoplay=1&mute=1&loop=1&playlist=SI7Rojim7N8&controls=0&showinfo=0&rel=0&disablekb=1&playsinline=1&iv_load_policy=3"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              width: "177.78vh",
+              height: "100vh",
+              minWidth: "100%",
+              minHeight: "56.25vw",
+              transform: "translate(-50%, -50%)",
+              border: "none",
+              pointerEvents: "none",
+            }}
+          />
           <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.55)" }} />
         </div>
         <div style={{ position: "relative", zIndex: 1, maxWidth: 1200, margin: "0 auto", padding: "80px 20px", width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 40 }}>
