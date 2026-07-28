@@ -11,9 +11,18 @@ export default function AtoutCard({ icon, title, desc }) {
       </div>
       {/* Back */}
       <div className="atout-back">
-        <div className="atout-icon">{icon}</div>
-        <h3 className="atout-title">{title}</h3>
-        <p className="atout-desc">{desc}</p>
+        <iframe
+          className="atout-video"
+          src="https://www.youtube.com/embed/SI7Rojim7N8?autoplay=1&mute=1&loop=1&playlist=SI7Rojim7N8&controls=0&showinfo=0&rel=0&disablekb=1"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        />
+        <div className="atout-overlay" />
+        <div style={{ position: "relative", zIndex: 2, display: "flex", flexDirection: "column", alignItems: "center" }}>
+          <div className="atout-icon">{icon}</div>
+          <h3 className="atout-title">{title}</h3>
+          <p className="atout-desc">{desc}</p>
+        </div>
       </div>
 
       <style jsx>{`
@@ -53,12 +62,31 @@ export default function AtoutCard({ icon, title, desc }) {
           justify-content: center;
           padding: 32px 28px;
           text-align: center;
-          background: #F5A524;
+          background: #000;
           transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
                       opacity 0.5s ease;
           transform: translateY(100%);
           opacity: 0;
           z-index: 2;
+          overflow: hidden;
+        }
+
+        .atout-video {
+          position: absolute;
+          inset: 0;
+          width: 300%;
+          height: 300%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          pointer-events: none;
+        }
+
+        .atout-overlay {
+          position: absolute;
+          inset: 0;
+          background: rgba(245, 165, 36, 0.75);
+          z-index: 1;
         }
 
         /* Hover : front tombe, back remonte */
